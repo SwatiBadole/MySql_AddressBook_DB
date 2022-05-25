@@ -97,4 +97,59 @@ mysql> select * from Address_Book;
 +-----------+----------+------------+-----------+----------+--------+-------------+-------------------+------------+
 5 rows in set (0.00 sec)
 
+---Use Case 5---
+
+---Ability to delete a person using person's name---
+
+==============================================================================
+
+
+mysql> delete from Address_Book where firstName="Deepali";
+Query OK, 1 row affected (0.02 sec)
+
+mysql> select * from Address_Book;
++-----------+----------+------------+-----------+----------+--------+-------------+------------------+------------+
+| firstName | lastName | address    | city      | state    | zip    | phoneNumber | email            | type       |
++-----------+----------+------------+-----------+----------+--------+-------------+------------------+------------+
+| Swati     | Badole   | kesarjwlga | osmanabad | Chakan   | 413605 |      123456 | s@gmail.com      | Family     |
+| priya     | bindale  | kesar      | solapur   | karnatka | 473605 |     1237456 | swatii@gmail.com | Friend     |
+| vijay     | mohite   | killari    | pune      | Kokan    |   1111 |      202132 | vijay@gmail.com  | Profession |
+| vijay     | patil    | kini       | Vele      | nashik   |   2241 |      603203 | vijay@gmail.com  | Friend     |
++-----------+----------+------------+-----------+----------+--------+-------------+------------------+------------+
+4 rows in set (0.00 sec)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
