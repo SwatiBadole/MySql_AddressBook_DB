@@ -77,3 +77,24 @@ mysql> select * from Address_Book;
 5 rows in set (0.00 sec)
 
 
+---Use Case 4---
+
+--Ability to edit existing contact person using their name---
+
+mysql>  update Address_Book SET state = 'Chakan' where firstName = 'Swati';
+Query OK, 1 row affected (0.04 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from Address_Book;
++-----------+----------+------------+-----------+----------+--------+-------------+-------------------+------------+
+| firstName | lastName | address    | city      | state    | zip    | phoneNumber | email             | type       |
++-----------+----------+------------+-----------+----------+--------+-------------+-------------------+------------+
+| Swati     | Badole   | kesarjwlga | osmanabad | Chakan   | 413605 |      123456 | s@gmail.com       | Family     |
+| priya     | bindale  | kesar      | solapur   | karnatka | 473605 |     1237456 | swatii@gmail.com  | Friend     |
+| vijay     | mohite   | killari    | pune      | Kokan    |   1111 |      202132 | vijay@gmail.com   | Profession |
+| Deepali   | Kumar    | konadi     | Vellore   | nagpur   |   2221 |      603203 | deepali@gmail.com | Friend     |
+| vijay     | patil    | kini       | Vele      | nashik   |   2241 |      603203 | vijay@gmail.com   | Friend     |
++-----------+----------+------------+-----------+----------+--------+-------------+-------------------+------------+
+5 rows in set (0.00 sec)
+
+
