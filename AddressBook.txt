@@ -1,0 +1,31 @@
+---Use Case 1---
+
+---Ability to create a Address Book Service DB---
+===========================================================
+
+mysql> create database Address_book_DB;
+Query OK, 1 row affected (0.04 sec)
+
+mysql> use  Address_book_DB;
+Database changed
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| address_book_db    |
+| demodb             |
+| information_schema |
+| management         |
+| mysql              |
+| payroll_service    |
+| payroll_services   |
+| performance_schema |
+| pets               |
+| sakila             |
+| sales              |
+| sample             |
+| sys                |
+| world              |
++--------------------+
+14 rows in set (0.01 sec)
+
