@@ -133,6 +133,19 @@ mysql> select * from Address_Book where city = "osmanabad" or state = 'chakan';
 1 row in set (0.00 sec)
 
 
+ ----Use Case 7----
+    
+     ---Ability to understand the size of address book by City and State---
+
+==================================================================================
+
+mysql> select COUNT(firstName) from Address_Book where city = "osmanabad" or state = 'chakan';
++------------------+
+| COUNT(firstName) |
++------------------+
+|                1 |
++------------------+
+1 row in set (0.01 sec)
 
 
 
