@@ -29,3 +29,51 @@ mysql> show databases;
 +--------------------+
 14 rows in set (0.01 sec)
 
+
+
+---Use Case 2---
+
+---Ability to create a Address Book Table with first and last names, address, city, state, zip, phone number and email as its attributes---
+
+============================================================================================================================================
+
+mysql> create table Address_books(firstName varchar(50) , lastName varchar(50) , address varchar(100),city varchar(20), state varchar(20), zip int(10) , phoneNumber int(20) , email varchar(50));
+Query OK, 0 rows affected, 2 warnings (0.24 sec)
+
+
+mysql> desc Address_Book;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| firstName   | varchar(50)  | YES  |     | NULL    |       |
+| lastName    | varchar(50)  | YES  |     | NULL    |       |
+| address     | varchar(100) | YES  |     | NULL    |       |
+| city        | varchar(20)  | YES  |     | NULL    |       |
+| state       | varchar(20)  | YES  |     | NULL    |       |
+| zip         | int          | YES  |     | NULL    |       |
+| phoneNumber | int          | YES  |     | NULL    |       |
+| email       | varchar(50)  | YES  |     | NULL    |       |
+| type        | varchar(30)  | YES  |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+9 rows in set (0.06 sec)
+
+
+
+---Use Case 3---
+
+---Ability to insert new Contacts to Address Book---
+
+
+mysql> select * from Address_Book;
++-----------+----------+------------+-----------+----------+--------+-------------+-------------------+------------+
+| firstName | lastName | address    | city      | state    | zip    | phoneNumber | email             | type       |
++-----------+----------+------------+-----------+----------+--------+-------------+-------------------+------------+
+| Swati     | Badole   | kesarjwlga | osmanabad | Goa      | 413605 |      123456 | s@gmail.com       | Family     |
+| priya     | bindale  | kesar      | solapur   | karnatka | 473605 |     1237456 | swatii@gmail.com  | Friend     |
+| vijay     | mohite   | killari    | pune      | Kokan    |   1111 |      202132 | vijay@gmail.com   | Profession |
+| Deepali   | Kumar    | konadi     | Vellore   | nagpur   |   2221 |      603203 | deepali@gmail.com | Friend     |
+| vijay     | patil    | kini       | Vele      | nashik   |   2241 |      603203 | vijay@gmail.com   | Friend     |
++-----------+----------+------------+-----------+----------+--------+-------------+-------------------+------------+
+5 rows in set (0.00 sec)
+
+
