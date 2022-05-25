@@ -118,6 +118,20 @@ mysql> select * from Address_Book;
 +-----------+----------+------------+-----------+----------+--------+-------------+------------------+------------+
 4 rows in set (0.00 sec)
 
+---Use Case 6---
+
+---Ability to Retrieve Person belonging to a City or State from the Address Book---
+
+=====================================================================================
+
+mysql> select * from Address_Book where city = "osmanabad" or state = 'chakan';
++-----------+----------+------------+-----------+--------+--------+-------------+-------------+--------+
+| firstName | lastName | address    | city      | state  | zip    | phoneNumber | email       | type   |
++-----------+----------+------------+-----------+--------+--------+-------------+-------------+--------+
+| Swati     | Badole   | kesarjwlga | osmanabad | Chakan | 413605 |      123456 | s@gmail.com | Family |
++-----------+----------+------------+-----------+--------+--------+-------------+-------------+--------+
+1 row in set (0.00 sec)
+
 
 
 
